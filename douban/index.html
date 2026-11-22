@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>【豆瓣】2026年最新 Top250 电影排行榜（完整榜单）</title>
+<meta name="description" content="豆瓣电影 Top 250 完整榜单（2026-11-21 快照）：250 部影片的海报、片名、年份、类型、导演、主演、评分与评价人数。">
+<meta name="theme-color" content="#f5f7fb">
+<meta property="og:type" content="website">
+<meta property="og:title" content="【豆瓣】2026年最新 Top250 电影排行榜（完整榜单）">
+<meta property="og:description" content="豆瓣电影 Top 250 完整榜单（2026-11-21 快照）：250 部影片的海报、片名、年份、类型、导演、主演、评分与评价人数。">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/favicon.svg">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="board-douban" data-board="douban">
+<div class="bg-glow" aria-hidden="true"></div>
+
+<nav class="site-nav"><div class="wrap nav-inner">
+  <a class="nav-logo" href="/"><span class="dot">榜</span>榜单中心</a>
+  <div class="nav-tabs" id="nav-tabs" role="navigation" aria-label="切换榜单"></div>
+</div></nav>
+
+<header class="site-head"><div class="wrap head-inner">
+  <div class="brand"><h1><span class="accent">豆瓣</span> 电影 Top 250</h1><span class="badge">2026</span></div>
+  <p class="head-note" id="head-note"></p>
+</div>
+<p class="wrap head-desc">豆瓣电影 Top 250 完整榜单（2026-11-21 快照）：250 部影片的海报、片名、年份、类型、导演、主演、评分与评价人数。</p>
+</header>
+
+<main>
+  <section class="wrap stats" id="stats" aria-label="榜单概览"></section>
+
+  <div class="controls-bar"><div class="wrap controls">
+    <label class="search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+      <input id="q" type="search" autocomplete="off" aria-label="搜索">
+    </label>
+    <div class="chips" id="chips" role="group" aria-label="筛选"></div>
+    <label class="sort"><span>排序</span><select id="sort" aria-label="排序方式"></select></label>
+  </div></div>
+
+  <section class="wrap">
+    <p class="result-line" id="result" aria-live="polite"></p>
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="empty" hidden>没有匹配的条目，换个条件试试。</p>
+  </section>
+</main>
+
+<footer class="site-foot"><div class="wrap">
+  <p><strong>关于名次</strong>：榜单名次为原站口径，由豆瓣按评分与评价人数综合加权，非纯分数排序。</p>
+  <p><strong>关于数据</strong>：条目信息与主图均取自 豆瓣电影 Top 250，版权归原权利人所有；本站仅作榜单整理与展示。</p>
+  <p class="foot-meta">数据快照 2026-11-21 · 榜单来源 豆瓣电影 Top 250 · 纯静态页面，无追踪、无外链 CDN</p>
+</div></footer>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="m-name">
+    <button class="modal-close" id="modal-close" aria-label="关闭">×</button>
+    <div class="modal-left">
+      <img id="m-poster" class="m-poster" alt="">
+      <p class="m-rank" id="m-rank"></p>
+    </div>
+    <div class="modal-right">
+      <h2 id="m-name"></h2>
+      <p class="m-en" id="m-en"></p>
+      <p class="m-tags" id="m-tags"></p>
+      <p class="m-score"><strong id="m-score"></strong><span id="m-score-unit"></span></p>
+      <dl class="m-stats" id="m-stats"></dl>
+      <p class="m-plot" id="m-plot" hidden></p>
+      <div class="m-links" id="m-links"></div>
+    </div>
+  </div>
+</div>
+
+<noscript><p class="wrap" style="padding:24px 0">这个页面需要 JavaScript 才能展示榜单。</p></noscript>
+<script src="/assets/js/core.js" defer></script>
