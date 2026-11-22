@@ -11,6 +11,8 @@
 
 纯静态、无框架、无外链 CDN，直接 `http.server` 就能跑。
 
+在线：<https://ranking-hub.netlify.app/> ｜ [豆瓣](https://ranking-hub.netlify.app/douban/) ｜ [IMDb](https://ranking-hub.netlify.app/imdb/) ｜ [播客](https://ranking-hub.netlify.app/podcast/)
+
 ## 本地预览
 
 ```bash
@@ -77,3 +79,15 @@ count  snapshot  stats[4]  facets[]  sorts[]  searchHint
 - 分面：类型 / 分类 chips + 年代 / 更新状态下拉。
 - 排序：按名次、按评分、按人数 / 集数。
 - 详情：点卡片开弹窗，`#1` 这样的深链可以直接跳转到某一名次。
+
+## 历史说明（三个独立站已归一）
+
+本仓库的前身是三套各自独立的单榜站点，2026-11-22 合并成现在这一个站点。原三份说明文档保留在 `docs/legacy/`，站点地址与仓库链接已改为指向本仓库：
+
+| 历史文档 | 原独立站点 | 现对应 | 状态 |
+| --- | --- | --- | --- |
+| [豆瓣 Top250 独立站说明](docs/legacy/douban-top250-movies.md) | `douban-top250-movies.netlify.app` | <https://ranking-hub.netlify.app/douban/> | 旧站已删；仓库 `LesslsMore/douban-top250-movies` 已归档 |
+| [IMDb Top250 独立站说明](docs/legacy/imdb-top250.md) | `imdb-top250-movies.netlify.app` | <https://ranking-hub.netlify.app/imdb/> | 旧站已删；仓库 `LesslsMore/imdb-top250` 已归档 |
+| [中文播客榜 独立站说明](docs/legacy/podcast-top100.md) | `podcast-top100.netlify.app` | <https://ranking-hub.netlify.app/podcast/> | 旧站已删；仓库 `LesslsMore/podcast-top100` 已归档 |
+
+三份文档里的榜单数据、字段口径、抓取方式仍然有效，可直接对照 `assets/data/*.json` 使用；页面样式与代码已统一到本仓库的 `assets/js/core.js` + `boards.json`。

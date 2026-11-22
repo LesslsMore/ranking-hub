@@ -19,6 +19,7 @@ ranking-hub/
 ```
 
 线上：<https://lesslsmore-rank.netlify.app>（site id `c4f2174d-1042-45ba-8692-0972edb72b33`）
+代码：<https://github.com/LesslsMore/ranking-hub>（main 分支，2026-11-22 新建并推送）
 
 主站 `https://lesslsmore.netlify.app` 里的 `/rank/` 是它的**带前缀副本**，由 `../scripts/build-preview.mjs`
 自动搬入并改写 `/assets/` → `/rank/assets/`，不要再单独手改 `preview/rank/`。
@@ -27,9 +28,9 @@ ranking-hub/
 
 | GitHub 仓库 | Netlify 站点 | 内容 |
 |---|---|---|
-| `LesslsMore/douban-top250-movies` | `douban-top250-movies.netlify.app` | 只有豆瓣一榜 |
-| `LesslsMore/imdb-top250` | `imdb-top250-movies.netlify.app` | 只有 IMDb 一榜 |
-| `LesslsMore/podcast-top100` | `podcast-top100.netlify.app` | 只有播客一榜 |
+| `LesslsMore/douban-top250-movies`（已归档） | `douban-top250-movies.netlify.app` | 只有豆瓣一榜 |
+| `LesslsMore/imdb-top250`（已归档） | `imdb-top250-movies.netlify.app` | 只有 IMDb 一榜 |
+| `LesslsMore/podcast-top100`（已归档） | `podcast-top100.netlify.app` | 只有播客一榜 |
 
 这三套页面是早期分开的样式（每页 4.7–5.4KB，各自独立），已经被 `ranking-hub` 的
 「同一套渲染内核 + 三份配置」取代。它们的榜单数据已经并入
